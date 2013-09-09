@@ -18,4 +18,9 @@ Add
 libraryDependencies += "net.virtual-void" %% "futures-backport" % "1"
 ```
 
-to your build.
+to your build. To use it with cross-building add these setting:
+
+libraryDependencies <++= scalaVersion {
+  case "2.9.2" => Seq("net.virtual-void" %% "futures-backport" % "1")
+  case _ => Nil
+}
