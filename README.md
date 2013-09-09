@@ -1,5 +1,5 @@
 This project contains classes added to the Scala library to the `scala.concurrent` package between
-Scala 2.9.2 and 2.9.3.
+Scala 2.9.2 and 2.9.3 (SIP-14 backport).
 
 See the license of the original code in LICENSE-scala.
 
